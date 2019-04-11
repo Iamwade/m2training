@@ -205,6 +205,8 @@ return [
         'Magento_WishlistAnalytics' => 1,
         'Magento_WishlistGraphQl' => 1,
         'Temando_Shipping' => 1,
+        'Training_Dependency2' => 0,
+        'Training_Dependency' => 1,
         'Vertex_Tax' => 1
     ]
 ];
