@@ -8,19 +8,26 @@ class Test
     private $arrayList;
     private $name;
     private $number;
+    private $managerFactory;
 
 
     public function __construct(
         \Training\TestOM\Model\ManagerInterface $manager,
         $name,
         int $number,
-        array $arrayList = []
+        array $arrayList = [],
+        \Training\TestOM\Model\ManagerInterfaceFactory $managerFactory
+
+//        int $threadsCount = null
     )
     {
         $this->manager = $manager;
         $this->name = $name;
         $this->number = $number;
         $this->arrayList = $arrayList;
+        $this->managerFactory = $managerFactory;
+
+//        $this->threadsCount = (int)$threadsCount;
     }
 
     public function log()
@@ -32,6 +39,13 @@ class Test
         print_r($this->number);
         echo '<br>';
         print_r($this->arrayList);
+        echo '<br>';
+        $newManager = $this->managerFactory->create();
+        print_r(get_class($newManager));
+
+//        echo '<br>';
+//        print_r($this->threadsCount);
+
     }
 }
 

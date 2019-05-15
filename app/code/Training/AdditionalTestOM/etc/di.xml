@@ -8,6 +8,7 @@
                 <item name="item_1" xsi:type="string">array text item additional</item>
                 <item name="item_2" xsi:type="number">60</item>
             </argument>
+<!--            <argument name="threadsCount" xsi:type="init_parameter">Magento\Indexer\Model\ProcessManager::THREADS_COUNT</argument>-->
         </arguments>
     </type>
 </config>
