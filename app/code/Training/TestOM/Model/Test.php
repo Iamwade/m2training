@@ -42,6 +42,8 @@ class Test
         echo '<br>';
         $newManager = $this->managerFactory->create();
         print_r(get_class($newManager));
+        echo '<br>';
+        echo '<br>';
 
 //        echo '<br>';
 //        print_r($this->threadsCount);
