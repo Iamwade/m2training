@@ -9,7 +9,9 @@ class Description extends \Magento\Catalog\Block\Product\View\Description
     ){
 
         // ??? setDescription - это магический метод? и как он работает?
-        $test = $subject->getProduct()->setDescription('Test description');
+        //$subject->getProduct()->setDescription('Test description');
+
+        $subject->setTemplate('Training_Test::description.phtml');
     }
 }
 
