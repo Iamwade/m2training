@@ -1,0 +1,13 @@
+<div class="stock-box">
+    <h3 data-bind="i18n: 'Qty'"></h3>
+    <div class="stock">
+        <p data-bind="text: stockObservable()"></p>
+    </div>
+    <div class="random">
+        <p data-bind="text: countObservable()"></p>
+    </div>
+    <div class="action">
+        <button type="button" data-bind="i18n: 'Show available quantity',click: showStock"></button>
+    </div>
+</div>
+

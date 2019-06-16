@@ -1,0 +1,22 @@
+<div data-bind="scope: 'stockPage'">
+    <!-- ko template: getTemplate() --><!-- /ko -->
+</div>
+
+<script type="text/x-magento-init">
+        {
+        "*": {
+            "Magento_Ui/js/core/app": {
+                "components": {
+                    "stockPage": {
+                        "component": "Training_Js/js/stock",
+                        "config": {
+                            "template": "Training_Js/stock",
+                            "url": <?= json_encode($block->getUrl('training_js/stock/index')) ?>,
+                            "id": <?= json_encode($block->getRequest()->getParam('id')) ?>
+                        }
+                    }
+                }
+            }
+        }
+    }
+</script>
