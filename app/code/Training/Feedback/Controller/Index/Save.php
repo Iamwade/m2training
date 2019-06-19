@@ -36,7 +36,6 @@ class Save extends \Magento\Framework\App\Action\Action
     public function execute()
     {
         $result = $this->resultRedirectFactory->create();
-        // какой еще пост
         if($post = $this->getRequest()->getPostValue()){
             try{
                 $this->validatePost($post);

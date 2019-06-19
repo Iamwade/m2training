@@ -40,7 +40,7 @@ class FeedbackList extends \Magento\Framework\View\Element\Template
                 ->setShowPerPage(false)
                 ->setShowAmounts(false)
                 ->setLimit($this->getLimit())
-                ->setCollection($this->getCollection());
+                ->setCollection($this->getFeedbackCollection());
             return $pagerBlock->toHtml();
         }
         return '';
@@ -51,7 +51,7 @@ class FeedbackList extends \Magento\Framework\View\Element\Template
     }
 
     public function getAddFeedbackUrl(){
-        return $this->getUrl('training_feedback/index/save');
+        return $this->getUrl('training_feedback/index/form');
     }
 
     public function getFeedbackDate($feedback){

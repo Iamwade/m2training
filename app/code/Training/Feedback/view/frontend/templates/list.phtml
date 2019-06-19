@@ -7,7 +7,7 @@
                 <span><?= __('Add Feedback') ?></span>
             </button>
         </div>
-        <?= $block->getPaginationHtml() ?>
+        <?= $block->getPagerHtml() ?>
     </div>
     <div class="feedback-list">
         <?php foreach ($block->getFeedbackCollection() as $feedback) : ?>
@@ -21,6 +21,6 @@
         <?php endforeach; ?>
     </div>
     <div class="toolbar">
-        <?= $block->getPaginationHtml(); ?>
+        <?= $block->getPagerHtml(); ?>
     </div>
 </div>
